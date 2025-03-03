@@ -1,0 +1,91 @@
+/* ✅ Sidebar Container */
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Align items to the top */
+  width: 250px; /* Fixed sidebar width */
+  height: 100vh; /* Full height */
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+/* ✅ Logo Section */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ✅ Ensure Logo Image is Properly Sized */
+.logo img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+/* ✅ Style for Logo Text */
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ✅ Menu Styling */
+.menu {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* ✅ Aligning Menu Item Properly */
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* ✅ Keeps icons and text aligned */
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  height: 2rem; /* 🔹 Ensures each item has equal height */
+  margin-left: 1rem;
+  position: relative;
+  transition: all 300ms ease;
+  font-size: 14px;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.8rem; /* 🔹 Adjusted padding for consistency */
+}
+
+.menuItem:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: rgba(255, 165, 0, 0.2); /* ✅ Soft blurred orange */
+  margin-left: 0;
+  padding: 0.4rem 0.8rem; /* ✅ Consistent size to fit all items */
+  border-radius: 0.6rem;
+  position: relative;
+  backdrop-filter: blur(4px);
+}
+
+/* ✅ Sidebar Indicator */
+.active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: orange;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  margin-right: calc(1rem - 6px);
+}
+/* ✅ Style for the Icon */
+.menuIcon {
+  font-size: 1.5rem; /* ✅ Adjust icon size */
+  color: #333; /* ✅ Match text color */
+}
+

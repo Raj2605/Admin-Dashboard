@@ -1,0 +1,16 @@
+.RightSide {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: space-evenly;
+  height: 100%;
+  overflow: hidden; /* ✅ Prevents entire section from overflowing */
+  margin-bottom: 50px;
+}
+
+.RightSide > div {
+  flex: 1; /* ✅ Ensures both "Updates" and "Student Review" get equal space */
+  overflow: hidden; /* ✅ Ensures child elements don't break layout */
+  padding: 1rem;
+  min-height: 0; /* ✅ Fixes flexbox overflow issue */
+}

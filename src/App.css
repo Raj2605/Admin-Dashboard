@@ -10,3 +10,32 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --activeItem: #f799a354;
 }
+
+
+.App {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
+  );
+}
+
+.AppGlass {
+  display: grid;
+  height: 99%;
+  width: 97%;
+  border-radius: 2rem;
+  background-color: var(--glass);
+  overflow: hidden;
+  grid-template-columns: 17rem auto 18rem; /* 🔹 Sidebar wider, updates section slightly smaller */
+  gap: 1.5rem; /* 🔹 Adds space between sections */
+}

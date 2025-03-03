@@ -1,0 +1,49 @@
+.Updates {
+  width: 85%;
+  background: white !important;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  box-shadow: var(--boxShadow); /* ✅ Added shadow for visibility */
+}
+
+.update {
+  display: flex;
+  gap: 0.7rem; /* Reduced spacing between items */
+  align-items: center;
+}
+
+.update img {
+  width: 2.5rem;  /* Reduce image size */
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+/* 🟢 Make Name and Notification More Compact */
+.noti {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Reduce gap between name and notification */
+}
+
+.noti div span:first-child {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px; /* Less space */
+}
+
+.noti div span:last-child {
+  color: rgb(15, 15, 15);
+  font-size: 12px; /* Reduce font size slightly */
+}
+
+.name span {
+  font-weight: bold; /* ✅ Now correctly selects the name */
+}
+
+.message span {
+  display: block; /* ✅ Prevents sticking */
+}

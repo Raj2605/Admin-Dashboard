@@ -1,0 +1,12 @@
+.StudentsReview {
+  width: 100%;
+  height: 250px;  /* Set a fixed height */
+  overflow: hidden; /* Prevents chart from overflowing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  box-shadow: var(--boxShadow);
+}
